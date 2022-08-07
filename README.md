@@ -39,15 +39,22 @@ python -m pip install --upgrade pip==20.2.3
 ```
 
 - Terminal
+
   - Mac/Linux users can use the default terminal.
   - Windows users can use either the GitBash terminal or WSL.
+
 - Command line utilities:
+
   - AWS CLI installed and configured using the `aws configure` command. Another important configuration is the region. Do not use the us-east-1 because the cluster creation may fails mostly in us-east-1. Let's change the default region to:
+
   ```bash
   aws configure set region us-east-2
   ```
+
   Ensure to create all your resources in a single region.
+
   - EKSCTL installed in your system. Follow the instructions [available here](https://docs.aws.amazon.com/eks/latest/userguide/eksctl.html#installing-eksctl) or <a href="https://eksctl.io/introduction/#installation" target="_blank">here</a> to download and install `eksctl` utility.
+
   - The KUBECTL installed in your system. Installation instructions for kubectl can be found <a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/" target="_blank">here</a>.
 
 ## Initial setup
